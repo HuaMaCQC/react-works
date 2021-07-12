@@ -1,0 +1,55 @@
+@import "../App.scss";
+
+.header {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  .menu-icon {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px 20px 0 0px;
+  }
+
+  .title {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    color: $color-primary-4;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .user {
+    float: right;
+    vertical-align: middle;
+
+    .notify-bar {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 10px;
+    }
+
+    .user-title {
+      color: $color-primary-4;
+      font-size: 20px;
+      vertical-align: middle;
+      padding: 10px;
+    }
+
+    .user-floating {
+      top: -1.2em;
+      left: 110%;
+    }
+  }
+
+  .header-bnt {
+    position: relative;
+    background-color: $color-primary-4;
+
+    &:hover {
+      background-color: $color-primary-3;
+    }
+  }
+}

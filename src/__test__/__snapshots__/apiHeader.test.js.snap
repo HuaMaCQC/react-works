@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search UI Snapshot Testing 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <div
+      class="menu-icon"
+    >
+      <i
+        aria-hidden="true"
+        class="sidebar big link icon"
+        data-testid="switchMenu"
+      />
+    </div>
+    <span
+      class="title"
+    >
+      管理系統
+    </span>
+    <div
+      class="user"
+    >
+      <div
+        class="notify-bar"
+      >
+        <a
+          class="ui mini label undefined header-bnt"
+        >
+          <i
+            aria-hidden="true"
+            class="envelope large icon"
+          />
+          信件
+          <div
+            class="ui red circular floating label undefined user-floating"
+          >
+            22
+          </div>
+        </a>
+        <a
+          class="ui mini label undefined header-bnt"
+        >
+          <i
+            aria-hidden="true"
+            class="comment large icon"
+          />
+          訊息
+          <div
+            class="ui red circular floating label undefined user-floating"
+          >
+            6
+          </div>
+        </a>
+      </div>
+      <span
+        class="user-title"
+      >
+        歡迎:
+      </span>
+      <a
+        class="ui large label undefined header-bnt"
+      >
+        <i
+          aria-hidden="true"
+          class="user circle large icon"
+        />
+        HuaMa
+      </a>
+    </div>
+    <style
+      jsx="true"
+    >
+      AppHeader.styledJsx.scss
+    </style>
+  </div>
+</div>
+`;

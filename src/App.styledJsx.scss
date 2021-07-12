@@ -1,0 +1,109 @@
+@import "./App.scss";
+
+.app {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    left: 0;
+    box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.2);
+    background-color: $color-primary-0;
+  }
+
+  .main {
+    display: flex;
+    position: absolute;
+    background-color: $color-primary-3;
+    top: 80px;
+    bottom: 30px;
+    width: 100%;
+    flex-direction: row;
+
+    .menu {
+      position: fixed;
+      top: 85px;
+      z-index: 1;
+      background-color: transparent;
+      width: 250px;
+      flex: 0 0 auto;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      height: 100%;
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    .article {
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      min-width: calc(100vw - 300px);
+      margin-left: 250px;
+      padding: 15px 15px 0px 15px;
+
+      &.menu-hide {
+        margin-left: 0px;
+        min-width: calc(100vw - 50px);
+      }
+
+      .explore-bar {
+        background-color: $color-primary-1;
+        height: 40px;
+        min-width: 720px;
+        margin: auto;
+        color: $color-primary-2;
+        box-shadow: 2px 0px 2px 1px rgba(20%, 20%, 40%, 0.2);
+        border-radius: 4px 4px 0px 0px;
+      }
+
+      .component {
+        box-shadow: 2px 2px 2px 1px rgba(20%, 20%, 40%, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: $color-primary-4;
+        min-width: 720px;
+        height: calc(100vh - 180px);
+        overflow: auto;
+        margin: 0 auto;
+        padding: 10px;
+
+        ::-webkit-scrollbar-button {
+          display: none;
+          width: 0;
+          height: 0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: rgba(20%, 20%, 40%, 0.2);
+          border: 2px solid transparent;
+          border-radius: 9px;
+          background-clip: content-box;
+        }
+
+        ::-webkit-scrollbar-track {
+          border: 2px solid transparent;
+          background-clip: content-box;
+          border-radius: 9px;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .footer {
+    border-top: 1px $color-primary-3 solid;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    opacity: 0.8;
+    background-color: $color-primary-1;
+  }
+}
